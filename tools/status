@@ -3,5 +3,5 @@
 if [ -z "$1" ]; then
     echo "Please supply the RequestID to check its status. To get the list of pending requests run the command `pending`"
 else
-    echo $(wget --quiet --method POST --body-data RequestID=$1 --output-document - http://localhost:8080/Luzzu/status)
+    echo $(wget --quiet --method GET --output-document - http://localhost:8080/Luzzu/v4/assessment/status/$1)
 fi
