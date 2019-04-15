@@ -1,6 +1,6 @@
 #!/bin/bash
 
-nohup mvn exec:java -X -f /Luzzu/Framework/luzzu-communications/pom.xml > /tmp/framework_output.log &
+#!/bin/bash
 
-/bin/echo "Available commands: cancel failed pending stats status success"
-/bin/bash
+cd /Luzzu/Framework/luzzu-communications
+nohup mvn exec:java -X > /tmp/framework_output.log &
