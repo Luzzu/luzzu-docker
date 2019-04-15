@@ -18,6 +18,6 @@ We recommend that each Luzzu instance has a volume attached for the quality meta
 
 A volume can be added by adding the -v option in the run command. Eg.:
 
-`docker run -it --name luzzu-docker -p 8080:8080 -v /Users/jeremy/luzzu/quality-metadata:/Luzzu/Framework/luzzu-communications/quality-metadata /Users/jeremy/Docker/Luzzu_Docker_Image/tmp:/tmp/ -d luzzu`
+`docker run -it --name luzzu-docker -p 8080:8080 -v /Users/jeremy/luzzu/quality-metadata:/Luzzu/Framework/luzzu-communications/quality-metadata -v /Users/jeremy/Docker/Luzzu_Docker_Image/tmp:/tmp/ -d luzzu`
 
 For additional quality metrics, you can also attach the /Luzzu/Framework/luzzu-communications/externals folder as another volume. If new metrics are added, the docker container has to be restarted.
