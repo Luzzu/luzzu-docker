@@ -7,7 +7,7 @@ This repository contains the dockerfile to run the Luzzu Framework from a docker
 ## Usage
 This container will have the Luzzu Framework and Web application installed, running on port 8080. In order to run Luzzu from the docker, you need to run the following command: 
 
-`docker run -it --name luzzu-docker -p 8080:8080 -d luzzu`. 
+`docker run -it --name luzzu-docker -p 8080:8080 -d luzzu/luzzu-framework`. 
 
 If you are using port 8080, then change the host port to a desired port number.
 
@@ -18,6 +18,6 @@ We recommend that each Luzzu instance has a volume attached for the quality meta
 
 A volume can be added by adding the -v option in the run command. Eg.:
 
-`docker run -it --name luzzu-docker -p 8080:8080 -v /Users/jeremy/luzzu/quality-metadata:/Luzzu/Framework/luzzu-communications/quality-metadata -v /Users/jeremy/Docker/Luzzu_Docker_Image/tmp:/tmp/ -d luzzu`
+`docker run -it --name luzzu-docker -p 8080:8080 -v /Users/jeremy/luzzu/quality-metadata:/Luzzu/Framework/luzzu-communications/quality-metadata -v /Users/jeremy/Docker/Luzzu_Docker_Image/tmp:/tmp/ -d luzzu/luzzu-framework`
 
 For additional quality metrics, you can also attach the /Luzzu/Framework/luzzu-communications/externals folder as another volume. If new metrics are added, the docker container has to be restarted.
