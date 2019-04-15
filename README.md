@@ -2,7 +2,7 @@
 This repository contains the dockerfile to run the Luzzu Framework from a docker container. The container is set up with a number of quality metrics from the Intrinsic, Representation, and Contextual dimension.
 
 ## Setup
-docker pull luzzu/luzzu-framework
+`docker pull luzzu/luzzu-framework`
 
 ## Usage
 This container will have the Luzzu Framework and Web application installed, running on port 8080. In order to run Luzzu from the docker, you need to run the following command: 
