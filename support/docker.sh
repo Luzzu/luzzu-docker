@@ -1,5 +1,5 @@
 #!/bin/bash
-PATH_INSTALLATION='/usr/bin' # the path where Luzzu and the Quality Metric repository should be installed
+PATH_INSTALLATION='/Luzzu' # the path where Luzzu and the Quality Metric repository should be installed
 
 # Pull and build RDFHDT
 git clone https://github.com/rdfhdt/hdt-java.git
@@ -10,7 +10,7 @@ mvn clean install -Dmaven.test.skip=true
 # Pull Luzzu and Quality Metrics from repository
 echo "Installing Luzzu in $PATH_INSTALLATION"
 cd $PATH_INSTALLATION
-echo "Pullingand Installing Luzzu"
+echo "Pulling and Installing Luzzu"
 git clone https://github.com/Luzzu/Framework.git
 cd Framework
 mvn clean install -Dmaven.test.skip=true
