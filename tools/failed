@@ -1,3 +1,0 @@
-#!/bin/bash
-
-echo $(wget --quiet --method GET --output-document - http://localhost:8080/Luzzu/v4/assessment/failed)

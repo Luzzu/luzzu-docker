@@ -1,7 +1,0 @@
-#!/bin/bash
-
-if [ -z "$1" ]; then
-    echo "Please supply the RequestID to cancel an assessment. To get the list of pending requests run the command `pending`"
-else
-    echo $(wget --quiet --method POST --body-data RequestID=$1 --output-document - http://localhost:8080/Luzzu/v4/assessment/cancel)
-fi
